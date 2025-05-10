@@ -1,0 +1,93 @@
+.label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #ff5252;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 2, 0, 0, 1);
+    -fx-font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+.text-field {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #00c6ff;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+    -fx-font-size: 14px;
+    -fx-padding: 8px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 4, 0, 0, 1);
+    -fx-border-width: 0 0 2px 0;
+}
+
+.text-field:focused {
+    -fx-background-color: #f0f8ff;
+    -fx-border-color: #9c27b0;
+    -fx-effect: dropshadow(gaussian, rgba(156,39,176,0.3), 8, 0, 0, 1);
+}
+
+.button {
+    -fx-background-color: linear-gradient(to right, #00c6ff, #0072ff);
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6px;
+    -fx-padding: 10px 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 4, 0, 0, 2);
+    -fx-font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to right, #0072ff, #00c6ff);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 8, 0, 0, 2);
+    -fx-scale-x: 1.03;
+    -fx-scale-y: 1.03;
+}
+
+.button:pressed {
+    -fx-background-color: linear-gradient(to right, #005ecb, #00aae4);
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+}
+
+.table-view {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #00c6ff;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 10px;
+    -fx-font-size: 14px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 8, 0, 0, 2);
+}
+
+.table-view .column-header {
+    -fx-background-color: linear-gradient(to bottom, #9c27b0, #673ab7);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 12px;
+}
+
+.table-view .table-row-cell {
+    -fx-background-color: #ffffff;
+    -fx-border-color: transparent transparent #f0f0f0 transparent;
+}
+
+.table-view .table-row-cell:odd {
+    -fx-background-color: #f8f9fa;
+}
+
+.table-view .table-row-cell:selected {
+    -fx-background-color: #e0f7fa;
+    -fx-text-fill: #006064;
+}
+
+.scroll-bar {
+    -fx-background-color: #f0f0f0;
+    -fx-background-radius: 0;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #9c27b0;
+    -fx-background-radius: 10px;
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: #673ab7;
+}
